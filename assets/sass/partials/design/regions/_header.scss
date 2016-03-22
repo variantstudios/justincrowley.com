@@ -1,8 +1,65 @@
-header.site-header {
+header.wrap {
+    margin: 0 auto 4em;
+    @include clearfix;
+    padding: 1em 2em 0;
+    height: 600px;
+}
+
+/*
+.header-bg {
   margin: 0 auto;
-  background: $nav-bg;
+  height: 300px;
+  background: #060606 url("../images/header-image-sub.jpg") no-repeat bottom center;
+  @include background-size(cover);
+  position: absolute;
+  top: 0;
   width: 100%;
-  @include clearfix;
-  @include breakpoint($tablet, $no-query: '.no-mq') {
+  z-index: -9;
+  @include breakpoint($tablet, $no-query: ".no-mq") {
+      height: 500px;
+  }
+}
+.header-front {
+  background: #060606 url("../images/header-front.jpg") no-repeat bottom center;
+  @include background-size(cover);
+  @include breakpoint($tablet, $no-query: ".no-mq") {
+      height: 550px;
+  }
+}
+*/
+.test {
+  background: url('/assets/images/header_bg.jpg')no-repeat top center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.nav-header {
+  z-index: 1;
+  @include breakpoint($tablet, $no-query: ".no-mq") {
+    float: none;
+    top: 0;
+    padding: 0 5em;
+    transition: top .5s ease-in-out;
+    text-align: center;
+  }
+}
+
+
+.logo {
+  @include breakpoint($tablet, $no-query: ".no-mq") {
+      @include grid-span(3,1);
+  }
+}
+
+.main-nav {
+  @include breakpoint($tablet, $no-query: ".no-mq") {
+      @include grid-span(9,4);
+  }
+}
+.hero {
+  @include breakpoint($tablet, $no-query: ".no-mq") {
+      @include grid-span(12,1);
   }
 }

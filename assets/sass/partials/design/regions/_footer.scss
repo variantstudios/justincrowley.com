@@ -1,16 +1,78 @@
 .footer-wrapper {
   @include clearfix;
-  color: #A6A8A9;
-  clear: both;
-  background: white;
+  //color: #A6A8A9;
+  //background-color: $footer-bg;
   width: 100%;
   @include breakpoint($tablet, $no-query: '.no-mq') {
   }
 }
 footer.wrap {
-  padding: 1.5em 2em 1em;
+  //padding: 1.5em 2em 1em;
   font-size: 95%;
-  font-family: $heading-font-family;
-  p { margin: 0; }
-  a { color: #A6A8A9; }
+  .left {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(6, 1, $gutter: 0);
+    }
+  }
+  .right {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(6, 7, $gutter: 0);
+        text-align: right;
+    }
+  }
+  .footer-top {
+    overflow: hidden;
+    color: #fff; 
+    .left { 
+        height: 165px;
+        background-color: #2B3136; 
+      }
+    .right { 
+      height: 165px;
+      background-color: #21292D;
+      text-align: center;
+    }
+    &:before {
+      background: #2B3136;
+      position: absolute;
+      left: 0;
+      width: 50%;
+      height: 165px;
+      content: '';
+      z-index: -9;
+    }
+    &:after {
+      background: #21292D;
+      position: absolute;
+      right: 0;
+      width: 50%;
+      height: 165px;
+      content: '';
+      z-index: -9;
+    }
+  }
+
+  .footer-bottom {
+    overflow: hidden;
+    background-color: #f8f8f8;
+    height: 130px;
+    &:before {
+      background: #f8f8f8;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 130px;
+      content: '';
+      z-index: -9;
+    }
+    .left { 
+        padding: 2em;
+        text-align: left;
+      }
+    .right { 
+      padding: 2em;
+      text-align: right;
+    }
+  }
+
 }

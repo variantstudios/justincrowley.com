@@ -1,5 +1,5 @@
 # Site settings
-title: Justin Crowley - National Direct Mortgage Lending
+title: Justin Crowley, LLC.
 email: team@variantstudios.com
 description: 
 baseurl: "http://www.justincrowley.com" # the subpath of your site, e.g. /blog/
@@ -44,7 +44,7 @@ disqus_short_name:
 disqus_show_comment_count: 
 
 # typekit
-typekit: 
+typekit: "xve1eaz"
 
 # Social Media
 facebook: 

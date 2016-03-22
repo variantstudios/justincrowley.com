@@ -3,53 +3,33 @@
   margin: 0;
   font-family: $heading-font-family;
   overflow: hidden;
+  float: right;
   li {
     list-style: none;
     margin: 0;
     display: inline-block;
+    height: 3em;
+    line-height: 3em;
+    a {
+      margin-left: 3em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #fff;
+      font-size: 1em;
+      &:hover {
+        color: #1D75B7;
+      }
+    }
+    &:first-child a { margin-left: 0;}
+    &:last-child a { 
+      border: 2px solid #fff;
+      border-radius: 25px;
+      padding: .5em 1.5em;
+    }
   } 
   a, a:visited { text-decoration: none; }
 }
-nav.main-nav {
-  font-size: 120%;
-  ul.menu {
-    @include breakpoint($tablet, $no-query: '.no-mq') {
-      // Drop down menu styling
-      ul {
 
-      }
-      li:hover {
-        ul {
-         
-          li {
-            display: block;
-            &:hover {  }
-          }
-        }
-      }
-    }
-  }
-  li {
-   
-    @include breakpoint($tablet, $no-query: '.no-mq') { 
-
-    }
-    li {
-
-    }
-  }
-  a, a:visited {
-    color: $link;
-    &.active {
-      @include breakpoint($tablet, $no-query: '.no-mq') {
-        &:before, &:after {
-
-        }
-        
-      }
-    }
-  }
-}
 
 .menu-btn {
   display: inline-block;
