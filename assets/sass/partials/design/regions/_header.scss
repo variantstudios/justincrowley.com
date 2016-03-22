@@ -1,6 +1,6 @@
 header.site-header {
   margin: 0 auto;
-  background: white;
+  background: $nav-bg;
   width: 100%;
   @include clearfix;
   @include breakpoint($tablet, $no-query: '.no-mq') {

@@ -8,24 +8,16 @@ main {
   width: 100%;
   @include breakpoint($tablet, $no-query: '.no-mq') { 
   }
-  .backstretch {
-    margin-top: -250px !important; 
-    @include breakpoint($phone) { 
-    }
-    @include breakpoint($tablet, $no-query: '.no-mq') { 
-      margin-top: 0 !important; 
-    }
-  }
 }
 .page-header {
-  color: $heading-color;
+  //color: $heading-color;
   @include text-shadow(1px, 0px, 3px, rgba(black,.4));
   padding: 2em 2em;
-  background-color: #363C41;
+  //background-color: #363C41;
   @include breakpoint($tablet, $no-query: '.no-mq') {
   }
   h1 {
-    color: #fff;
+    //color: #fff;
     font-size: 2.15em;
     @include breakpoint($tablet, $no-query: '.no-mq') {
       font-size: 2.35em;
