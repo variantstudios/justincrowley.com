@@ -1,11 +1,8 @@
 header.site-header {
   margin: 0 auto;
-  background: #E2E2E2;
+  background: white;
   width: 100%;
   @include clearfix;
   @include breakpoint($tablet, $no-query: '.no-mq') {
-    width: 350px;
-    height: 100%;
-    position: fixed;
   }
 }

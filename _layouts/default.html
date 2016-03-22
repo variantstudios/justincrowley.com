@@ -6,24 +6,9 @@
 	{% include head.html %}
 	<body class="{{ page.class }}">
   	{% include browserupgrade.html %}
-  	<div class="desktop-left">{% include header.html %}</div>
-  	<div class="desktop-right">{{ content }}</div>
+  	{% include header.html %}
+  	{{ content }}
   	{% include footer.html %}
   	{% include scripts.html %}
-  	{% if page.url == "/index.html" %}
-  		<script type="text/javascript">
-  			$(document).ready(function() {
-  			  $(".front").backstretch([
-  			  	{% for image in page.images %}
-  			  		{% if forloop.last == false %}
-  			  			"{{ image.image_path }}",
-  			  		{% else %}
-  			  			"{{ image.image_path }}"
-  			  		{% endif %}
-  			  	{% endfor %}
-  			  ], {duration: 5000, fade: 750});
-  			});
-  		</script>
-  	{% endif %}
   </body>
 </html>
