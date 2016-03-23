@@ -1,0 +1,20 @@
+.hero {
+	text-align: center;
+	margin: 8em 0 0 0;
+	h1 {
+		font-size: 3em;
+		color: #FFFFFF;
+	}
+	p {
+		color: #fff;
+		margin: 0 auto 2em auto;
+		width: 70%;
+	}
+	a.call-to-action {
+		color: #fff;
+		text-decoration: none;
+	  	border: 2px solid #fff;
+     	border-radius: 25px;
+      	padding: .5em 1.5em;
+	}
+}

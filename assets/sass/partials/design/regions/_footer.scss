@@ -1,7 +1,5 @@
 .footer-wrapper {
   @include clearfix;
-  //color: #A6A8A9;
-  //background-color: $footer-bg;
   width: 100%;
   @include breakpoint($tablet, $no-query: '.no-mq') {
   }
@@ -30,7 +28,20 @@ footer.wrap {
     .right { 
       height: 165px;
       background-color: #21292D;
-      text-align: center;
+      text-align: right;
+      padding-top: 4em;
+      p {
+        display: inline-block;
+        
+        &.text {
+          font-weight: 700;
+          font-size: 2em;
+        }
+        &.phone {
+          margin-left: .5em;
+          font-size: 2em;
+        }
+      }
     }
     &:before {
       background: #2B3136;

@@ -1,33 +1,11 @@
 header.wrap {
-    margin: 0 auto 4em;
+    margin: 0 auto;
     @include clearfix;
-    padding: 1em 2em 0;
-    height: 600px;
+    padding: 4em 2em 0;
+    height: 615px;
 }
 
-/*
 .header-bg {
-  margin: 0 auto;
-  height: 300px;
-  background: #060606 url("../images/header-image-sub.jpg") no-repeat bottom center;
-  @include background-size(cover);
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -9;
-  @include breakpoint($tablet, $no-query: ".no-mq") {
-      height: 500px;
-  }
-}
-.header-front {
-  background: #060606 url("../images/header-front.jpg") no-repeat bottom center;
-  @include background-size(cover);
-  @include breakpoint($tablet, $no-query: ".no-mq") {
-      height: 550px;
-  }
-}
-*/
-.test {
   background: url('/assets/images/header_bg.jpg')no-repeat top center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
