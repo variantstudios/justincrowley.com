@@ -35,11 +35,11 @@ footer.wrap {
         
         &.text {
           font-weight: 700;
-          font-size: 2em;
+          font-size: 1.5em;
         }
         &.phone {
           margin-left: .5em;
-          font-size: 2em;
+          font-size: 1.5em;
         }
       }
     }
@@ -67,6 +67,10 @@ footer.wrap {
     overflow: hidden;
     background-color: #f8f8f8;
     height: 130px;
+    p {
+      margin: 0;
+      font-size: 90%;
+      }
     &:before {
       background: #f8f8f8;
       position: absolute;
@@ -77,8 +81,11 @@ footer.wrap {
       z-index: -9;
     }
     .left { 
-        padding: 2em;
+        padding: 2em 2em 2em 6em;
         text-align: left;
+        background: url('/assets/images/equal_housing_lender.png')no-repeat center left;
+        background: url('/assets/images/equal_housing_lender.svg')no-repeat center left;
+
       }
     .right { 
       padding: 2em;
