@@ -16,8 +16,14 @@
       font-weight: 600;
       color: #fff;
       font-size: 1em;
+      text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+      transition: all 0.5s ease;
       &:hover {
-        color: #1D75B7;
+        color: #E2E2E2;
+      }
+      &:active {
+        top: 1px;
+        position: relative;
       }
     }
     &:first-child a { margin-left: 0;}

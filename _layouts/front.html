@@ -10,6 +10,9 @@ layout: default
 		</div>
 	</section> -->
     <section class="content-wrapper wrap">
-    	<h3>TESIMONIAL CAROUSEL GOES HERE...</h3>
+    	{% for item in site.testimonials %}
+		<h4>{{ item.name }}</h4>
+		{{ item.content }}
+		{% endfor %}
     </section>
 </main>

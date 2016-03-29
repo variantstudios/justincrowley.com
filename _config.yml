@@ -27,9 +27,8 @@ permalink: /blog/:year-:month-:day/:title/
 
 #Collections
 collections:
-  directory:
-    output: true
-    permalink: /directory/:title/
+  testimonials:
+    output: false
 
 # Blog Settings
 paginate: 3
