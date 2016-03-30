@@ -1,9 +1,10 @@
 .menu {
-  padding: 0;
+  padding: 1em 0 0 0;
   margin: 0;
   font-family: $heading-font-family;
   overflow: hidden;
-  float: right;
+  float: none;
+  text-align: center;
   li {
     list-style: none;
     margin: 0;
@@ -11,7 +12,7 @@
     height: 3em;
     line-height: 3em;
     a {
-      margin-left: 3em;
+      margin-left: .5em;
       text-transform: uppercase;
       font-weight: 600;
       color: #fff;
@@ -27,19 +28,29 @@
       }
     }
     &:first-child a { margin-left: 0;}
-    &:last-child a { 
-      border: 2px solid #fff;
-      border-radius: 25px;
-      padding: .5em 1.5em;
-      &:hover { 
-        border: 2px solid #E2E2E2;
-      }
-    }
+    
   } 
   a, a:visited { text-decoration: none; }
+
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    padding: 0;
+    float: right;
+    ul {}
+      li {
+        margin-left: 2em;
+        &:last-child a{ 
+          border: 2px solid #fff;
+          border-radius: 25px;
+          padding: .5em 1.5em;
+        &:hover { 
+          border: 2px solid #E2E2E2;
+        }
+      }
+    } 
+  }
 }
 
-
+/*
 .menu-btn {
   display: inline-block;
   float: right;
@@ -74,4 +85,4 @@ nav.main-nav {
       left: -100%;
     }
   }
-}
+}*/

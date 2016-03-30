@@ -4,7 +4,7 @@
     overflow: auto;
     margin: 0 auto;
     padding: 0;
-    width: 90%;
+    width: 80%;
 }
 .unslider-arrow.prev {
 	margin: -150px 0 0 0;
@@ -15,6 +15,7 @@
 	height: 14px;
 	width: 9px;
 	padding: 1em;
+	left: 0px;
 }
 
 
@@ -27,4 +28,5 @@
 	height: 14px;
 	width: 9px;
 	padding: 1em;
+	right: 0px;
 }

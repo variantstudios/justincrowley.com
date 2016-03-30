@@ -1,14 +1,14 @@
 .hero {
+	margin: 3em 0 0 0;
 	text-align: center;
-	margin: 8em 0 0 0;
+	
 	h1 {
-		font-size: 3em;
+		font-size: 2em;
 		color: #FFFFFF;
 	}
 	p {
 		color: #fff;
 		margin: 0 auto 2em auto;
-		width: 70%;
 		line-height: 1.8em;
 	}
 	a.call-to-action {
@@ -18,4 +18,15 @@
      	border-radius: 25px;
       	padding: .5em 1.5em;
 	}
+	@include breakpoint($tablet, $no-query: ".no-mq") {
+      @include grid-span(12,1);
+      margin: 8em 0 0 0;
+      h1 {
+		font-size: 3em;
+		color: #FFFFFF;
+		}
+	p {
+		width: 70%;
+	}
+  	}
 }
