@@ -1,5 +1,4 @@
 ---
-title: Testimonial One Title
 name: Jane Doe
 weight: 1
 ---
