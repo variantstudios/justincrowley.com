@@ -1,9 +1,13 @@
 ---
 layout: page
-title: "About Us"
-subtitle: "Subtitle goes here."
+title: About Us
+subtitle: Subtitle goes here.
 permalink: /about/
 ---
+
+
+![Team Crowley](/uploads/versions/crowleyteamfinals_compressed---x----1200-801x---.jpg)
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 Nihil molestiae consequatur, vel illum qui dolorem eum. Qui officia deserunt mollit anim id est laborum. Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque. Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque. Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Qui officia deserunt mollit anim id est laborum. Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
