@@ -6,10 +6,13 @@ layout: default
     <section class="content-wrapper wrap">
     	<div class="my-slider">
 			<ul>
-				{% for item in site.testimonials %}
+				{% assign items = site.testimonials | sort: 'weight' %}
+				{% for item in items %}
 				<li>
-					<h4>{{ item.name }}</h4>
+					<h4>{{ item.title }}</h4>
 					{{ item.content }}
+					<h5>- {{ item.name }}</h5>
+					
 				</li>
 				{% endfor %}
 			</ul>
