@@ -31,6 +31,9 @@
       border: 2px solid #fff;
       border-radius: 25px;
       padding: .5em 1.5em;
+      &:hover { 
+        border: 2px solid #E2E2E2;
+      }
     }
   } 
   a, a:visited { text-decoration: none; }

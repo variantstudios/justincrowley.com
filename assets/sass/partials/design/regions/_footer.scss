@@ -19,17 +19,19 @@ footer.wrap {
     }
   }
   .footer-top {
+    background-color: #2B3136;
     overflow: hidden;
     color: #fff; 
+
     .left { 
-        height: 165px;
+        height: 130px;
         background-color: #2B3136; 
       }
     .right { 
-      height: 165px;
+      height: auto;
       background-color: #21292D;
-      text-align: right;
-      padding-top: 4em;
+      text-align: center;
+      padding-top: 2em;
       p {
         display: inline-block;
         
@@ -43,30 +45,42 @@ footer.wrap {
         }
       }
     }
-    &:before {
-      background: #2B3136;
-      position: absolute;
-      left: 0;
-      width: 50%;
-      height: 165px;
-      content: '';
-      z-index: -9;
-    }
-    &:after {
-      background: #21292D;
-      position: absolute;
-      right: 0;
-      width: 50%;
-      height: 165px;
-      content: '';
-      z-index: -9;
+    /* Tablet: Top Bottom */
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      .left {
+
+      }
+      .right { 
+        height: 165px;
+        background-color: #21292D;
+        text-align: center;
+        padding-top: 4em;
+      }
+      &:before {
+        background: #2B3136;
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: 165px;
+        content: '';
+        z-index: -9;
+      }
+      &:after {
+        background: #21292D;
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 165px;
+        content: '';
+        z-index: -9;
+      }
     }
   }
 
   .footer-bottom {
-    overflow: hidden;
+    //overflow: hidden;
     background-color: #f8f8f8;
-    height: 130px;
+    //height: 130px;
     p {
       margin: 0;
       font-size: 90%;
@@ -82,14 +96,23 @@ footer.wrap {
     }
     .left { 
         padding: 2em 2em 2em 6em;
-        text-align: left;
+        text-align: center;
         background: url('/assets/images/equal_housing_lender.png')no-repeat center left;
         background: url('/assets/images/equal_housing_lender.svg')no-repeat center left;
 
       }
     .right { 
       padding: 2em;
-      text-align: right;
+      text-align: center;
+    }
+    /* Tablet: Footer Bottom */
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      .left {
+        text-align: left;
+      }
+      .right {
+        text-align: right;
+      }
     }
   }
 

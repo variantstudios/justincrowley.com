@@ -8,7 +8,7 @@ html {
 }
 *, *:before, *:after { box-sizing: inherit; }
 .wrap {
-  padding: 0 1.5em;
+  //padding: 0 1.5em;
   @include clearfix;
   max-width: $container_width;
   @include breakpoint($tablet, $no-query: ".no-mq") {
