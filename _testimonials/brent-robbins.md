@@ -1,4 +1,5 @@
 ---
+title: Testimonial Three Title
 name: Brent Robbins
 weight: 3
 ---
