@@ -11,4 +11,11 @@ $(document).ready(function() {
 	} else {
 		$('html').addClass('no-mq');
 	};
+  $('.my-slider').unslider({
+      autoplay: true,
+      infinite: true,
+      keys: false,
+      nav: false,
+      delay: 7000
+  });
 });

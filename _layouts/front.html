@@ -1,18 +1,18 @@
 ---
 layout: default
 ---
-
+<div class="header-arrow"></div>
 <main>
-	<!-- <section class="page-header-wrapper wrap">
-		<div class="page-header  top clearfix">
-	    <h1>{{ page.title }}</h1>
-	    <p>{{ page.subtitle }}</p>
-		</div>
-	</section> -->
     <section class="content-wrapper wrap">
-    	{% for item in site.testimonials %}
-		<h4>{{ item.name }}</h4>
-		{{ item.content }}
-		{% endfor %}
+    	<div class="my-slider">
+			<ul>
+				{% for item in site.testimonials %}
+				<li>
+					<h4>{{ item.name }}</h4>
+					{{ item.content }}
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
     </section>
 </main>
