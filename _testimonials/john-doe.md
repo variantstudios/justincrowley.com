@@ -1,5 +1,4 @@
 ---
-title: Testimonial Two Title
 name: John Doe
 weight: 2
 ---
