@@ -1,6 +1,7 @@
 ---
+title: Testimonial test two
 name: John Doe
-weight: 1
+weight: 2
 ---
 
 Dicam repudiare in mea, diam contentiones ne pri. Ridens accusam cotidieque an vix, duo cu autem perfecto. Ei quod accusamus sea, duo rebum utamur electram ut, eu per harum aliquando definiebas. Duo iuvaret atomorum forensibus eu, sed commune voluptaria eloquentiam id. Ei vocent moderatius conclusionemque mei.
