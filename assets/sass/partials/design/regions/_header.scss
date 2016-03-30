@@ -4,8 +4,15 @@ header.wrap {
     padding: 1em 2em 2em 2em;
     @include breakpoint($tablet, $no-query: '.no-mq') {
       padding: 4em 2em 0;
-      min-height: 615px;
+      min-height: 450px;
     }
+}
+body.front header.wrap{
+
+   @include breakpoint($tablet, $no-query: '.no-mq') {
+    min-height: 615px;
+   }
+
 }
 
 .header-bg {
