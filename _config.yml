@@ -2,7 +2,7 @@
 title: Justin Crowley, LLC.
 email: team@variantstudios.com
 description: 
-baseurl: "http://www.justincrowley.com" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.justincrowley.com" # the base hostname & protocol for your site
 timezone: America/Denver
 
